@@ -1,0 +1,11 @@
+{
+  "Groceries": [],
+  "Users": [
+    { "id": 0, "username": "daniellarsen725@hotmail.com", "password": "password" },
+    { "id": 1, "username": "daniellarsen725@yahoo.dk", "password": "password" },
+    { "id": 2, "username": "daniellarsen725@gmail.com", "password": "password" }
+  ],
+  "token": [
+    {"id": 0, "token": "HElloWorld"}
+  ]
+}

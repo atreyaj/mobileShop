@@ -1,0 +1,11 @@
+@import url("~/platform.css");
+.green {
+    background-color: green;
+    color: white;
+}
+
+.transparent-bg {
+    background-color: rgba(1, 0, 0, 0.0);
+    border-color:rgba(1, 0, 0, 0.0);
+    border-width: 1;
+}

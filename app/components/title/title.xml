@@ -1,0 +1,5 @@
+<ActionBar loaded="loaded">
+    <GridLayout>
+        <Button class="transparent-bg" text="{{ title }}" horizontalAlignment="center" />
+    </GridLayout>
+</ActionBar>

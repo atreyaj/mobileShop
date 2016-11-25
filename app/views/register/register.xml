@@ -1,0 +1,13 @@
+<Page loaded="loaded"
+      xmlns="http://schemas.nativescript.org/tns.xsd"
+      xmlns:titlecomponent="components/title">
+    <titlecomponent:title title="Groceries register"/>
+    <StackLayout>
+        <Image src="res://logo" stretch="none" horizontalAlignment="center"/>
+
+        <TextField text="{{ email }}" id="email" hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
+        <TextField text="{{ password }}" secure="true" hint="Password" />
+
+        <Button text="Sign Up" tap="register" />
+    </StackLayout>
+</Page>
