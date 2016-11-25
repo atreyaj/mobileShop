@@ -13,7 +13,7 @@
   "license": "MIT",
   "homepage": "https://github.com/danlars/mobileShop",
   "nativescript": {
-    "id": "org.nativescript.sampleGroceries",
+    "id": "org.nativescript.mobileApp",
     "tns-android": {
       "version": "2.4.1"
     },
