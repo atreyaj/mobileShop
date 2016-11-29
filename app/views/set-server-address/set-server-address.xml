@@ -1,0 +1,18 @@
+<Page loaded="loaded"
+      xmlns="http://schemas.nativescript.org/tns.xsd"
+      xmlns:titlecomponent="components/title"
+      xmlns:dd="nativescript-drop-down" >
+
+    <titlecomponent:title title="Set server address"/>
+
+    <StackLayout orientation="vertical">
+
+        <dd:DropDown items="{{ protocols }}" selectedIndex="{{ protocol }}" />
+
+        <TextField id="ipaddress" returnKeyType="next" returnPress="goToPortnumber" text="{{ url }}" hint="Eg. 192.168.0.1" autocorrect="false" autocapitalizationType="none"/>
+        <TextField id="portnumber" returnKeyType="go" returnPress="accept" text="{{ portnumber }}" keyboardType="number" hint="Eg. 3000" autocorrect="false" autocapitalizationType="none"/>
+
+        <Button text="go to login" class="green" tap="accept"/>
+    </StackLayout>
+</Page>
+

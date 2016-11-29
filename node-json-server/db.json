@@ -1,11 +1,71 @@
 {
-  "Groceries": [],
-  "Users": [
-    { "id": 0, "username": "daniellarsen725@hotmail.com", "password": "password" },
-    { "id": 1, "username": "daniellarsen725@yahoo.dk", "password": "password" },
-    { "id": 2, "username": "daniellarsen725@gmail.com", "password": "password" }
+  "items": [
+    {
+      "id": 0,
+      "name": "Pineapple",
+      "userId": 0
+    },
+    {
+      "id": 1,
+      "name": "Apple",
+      "userId": 0
+    },
+    {
+      "id": 2,
+      "name": "Pineapple",
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "name": "Apple",
+      "userId": 1
+    },
+    {
+      "id": 4,
+      "name": "Pineapple",
+      "userId": 2
+    },
+    {
+      "id": 5,
+      "name": "Apple",
+      "userId": 2
+    },
+    {
+      "id": 6,
+      "name": "Pineapple",
+      "userId": 3
+    },
+    {
+      "id": 7,
+      "name": "Apple",
+      "userId": 3
+    },
+    {
+      "name": "Strawberry",
+      "userId": "0",
+      "id": 8
+    }
   ],
-  "token": [
-    {"id": 0, "token": "HElloWorld"}
+  "users": [
+    {
+      "id": 0,
+      "username": "daniellarsen725@hotmail.com",
+      "password": "password"
+    },
+    {
+      "id": 1,
+      "username": "daniellarsen725@yahoo.dk",
+      "password": "password"
+    },
+    {
+      "id": 2,
+      "username": "daniellarsen725@gmail.com",
+      "password": "password"
+    },
+    {
+      "id": 3,
+      "username": "daniellarsen725@icloud.com",
+      "password": "password"
+    }
   ]
 }

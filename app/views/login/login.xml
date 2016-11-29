@@ -8,8 +8,8 @@
 
         <Image src="res://logo" stretch="none" horizontalAlignment="center" />
 
-        <TextField text="{{ email }}" hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none"/>
-        <TextField text="{{ password }}" hint="Password" secure="true"/>
+        <TextField id="username" returnKeyType="next" returnPress="goToPassword" text="{{ email }}" hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none"/>
+        <TextField id="password" returnKeyType="go" returnPress="callSignIn" text="{{ password }}" hint="Password" secure="true" />
 
         <Button text="Sign in" class="green" tap="signIn"/>
         <Button text="Sign up for Groceries" class="link" tap="register"/>

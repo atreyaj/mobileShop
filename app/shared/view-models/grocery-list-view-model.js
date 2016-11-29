@@ -1,23 +1,19 @@
 let config = require("../../shared/config");
-let fetchModule = require("fetch");
 let ObservableArray = require("data/observable-array").ObservableArray;
 
 function GroceryListViewModel(items) {
     let viewModel = new ObservableArray(items);
 
     viewModel.load = function () {
-        return fetch(config.apiUrl + "Groceries", {
-            headers: {
-                "Authorization": "Bearer " + config.token
-            }
-        }).then(handleErrors)
+        return fetch(config.apiUrl + "users/" + config.user.id + "/items")
+            .then(handleErrors)
             .then(function (response) {
                 return response.json();
             }).then(function (data) {
-                data.Result.forEach(function (grocery) {
+                data.forEach(function (grocery) {
                     viewModel.push({
-                        name: grocery.Name,
-                        id: grocery.Id
+                        name: grocery.name,
+                        id: grocery.id
                     });
                 });
             });
@@ -30,13 +26,12 @@ function GroceryListViewModel(items) {
     };
 
     viewModel.add = (grocery) => {
-        return fetch(config.apiUrl + "Groceries", {
+        return fetch(config.apiUrl + "users/" + config.user.id + "/items", {
             method: "POST",
             body: JSON.stringify({
-                Name: grocery
+                name: grocery
             }),
             headers: {
-                "Authorization": "Bearer " + config.token,
                 "Content-Type": "application/json"
             }
         })
@@ -45,7 +40,7 @@ function GroceryListViewModel(items) {
                 return response.json();
             })
             .then(function (data) {
-                viewModel.push({name: grocery, id: data.Result.Id});
+                viewModel.push({name: grocery, id: data.id});
             });
     };
 
