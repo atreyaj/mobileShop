@@ -1,4 +1,4 @@
-# mobileShop
+# The mobile groceries list
 A NativeScript-built iOS and Android app for managing shop items
 
 **Note**: This app was made for testing lovefield on mobile apps as a offline database option.
@@ -16,3 +16,5 @@ to run the mobile project, you need to have nativescript installed. To install N
 When you got Nativescript up and running, you can type the command
  
  _tns run_ android | ios (Choose either android or ios, ios only works on apple devices)
+ 
+ To test the offline database, turn off the api, at any given moment and the data you sent to the api, should still exists.
