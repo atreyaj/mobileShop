@@ -1,21 +1,20 @@
 let config = require("../../shared/config");
 let thisPage = require("../set-server-address/set-server-address");
 let view = require("ui/core/view");
-let observable = require("data/observable");
+let observableModule = require("data/observable");
 let frameModule = require("ui/frame");
 
 //Variables
-let portnumberTextField;
+let context = new observableModule.Observable();
+const protocols = ["http", "https"];
 
 exports.loaded = (args) => {
-    let page = args.object, context = observable;
-    context.protocols = ["http", "https"];
+    let page = args.object;
+    context.protocols = protocols;
     context.protocol = config.protocol;
     context.url = config.url;
     context.portnumber = config.portnumber;
     page.bindingContext = context;
-    portnumberTextField = view.getViewById(page, "portnumber");
-
 };
 
 exports.goToPortnumber = () => {
@@ -23,6 +22,7 @@ exports.goToPortnumber = () => {
 };
 
 exports.accept = () => {
+    config.apiUrl = protocols[context.protocol] + '://' + (context.url || "localhost") + ':' + (context.portnumber || 80) + '/';
     frameModule.topmost().navigate("views/login/login");
 };
 

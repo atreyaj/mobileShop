@@ -1,7 +1,7 @@
 # The mobile groceries list
 A NativeScript-built iOS and Android app for managing shop items
 
-**Note**: This app was made for testing lovefield on mobile apps as a offline database option.
+**Note**: This app was made for testing lovefield on mobile apps as a offline api and database option.
 
 To test if the offline database works, i have setup a json.db in the **node-json-server** directory. 
 To run it (And the entire project), you need to have _npm_ installed first, then install json-server using the command.
