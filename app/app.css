@@ -4,8 +4,24 @@
     color: white;
 }
 
+.grey {
+    color: #848484;
+}
+
 .transparent-bg {
     background-color: rgba(1, 0, 0, 0.0);
     border-color:rgba(1, 0, 0, 0.0);
     border-width: 1;
+}
+
+.fa {
+    font-family: "FontAwesome";
+}
+
+.fa-lg {
+    font-size: 20;
+}
+
+.fa-bold {
+    font-weight: bold;
 }

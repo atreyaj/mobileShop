@@ -13,7 +13,8 @@ function GroceryListViewModel(items) {
                 data.forEach(function (grocery) {
                     viewModel.push({
                         name: grocery.name,
-                        id: grocery.id
+                        id: grocery.id,
+                        userId: grocery.userId
                     });
                 });
             });
@@ -40,8 +41,26 @@ function GroceryListViewModel(items) {
                 return response.json();
             })
             .then(function (data) {
-                viewModel.push({name: grocery, id: data.id});
+                viewModel.push({name: grocery, id: data.id, userId: data.userId});
             });
+    };
+
+    viewModel.delete = (model) => {
+        if(config.user.id != model.userId) {
+            return Promise.reject("This user does not have access to this item.");
+        }
+
+        return fetch(config.apiUrl + "items/" + model.id, {
+            method: "DELETE",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+        .then(handleErrors)
+        .then(function () {
+            let index = viewModel.indexOf(model);
+            viewModel.splice(index, 1);
+        });
     };
 
     return viewModel;

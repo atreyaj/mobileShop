@@ -58,3 +58,13 @@ exports.loaded = function(args) {
         });
     });
 };
+
+exports.delete = (args) => {
+    let model = args.object.obj;
+    groceryList.delete(model).catch(function (message) {
+        dialogsModule.alert({
+            message: message,
+            okButtonText: "OK"
+        });
+    });
+};

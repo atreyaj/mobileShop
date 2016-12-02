@@ -12,7 +12,10 @@
         <Button text="Add" tap="add" row="0" col="1"/>
         <ListView items="{{ groceryList }}" id="groceryList" row="1" colSpan="2">
             <ListView.itemTemplate>
-                <Label text="{{ name }}" horizontalAlignment="left" verticalAlignment="center"/>
+                <GridLayout class="fa" columns="*, auto">
+                    <Label text="{{ name }}"/>
+                    <Button class="transparent-bg fa-lg grey" obj="{{ $value }}" ios:visibility="collapsed" text="&#xf014;" col="1" tap="delete"/>
+                </GridLayout>
             </ListView.itemTemplate>
         </ListView>
     </GridLayout>
