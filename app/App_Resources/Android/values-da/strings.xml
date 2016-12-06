@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Application specific-->
+    <string name="app_name">Vare liste</string>
+    <string name="title_activity_kimera">Vare liste</string>
+
+    <!--Titles-->
+    <string name="set_server_title">Sæt api information</string>
+    <string name="register_title">Registrer bruger</string>
+    <string name="login_title">Bruger login</string>
+    <string name="items_title">Vare liste</string>
+
+    <!--Content-->
+    <string name="go_to_login">Gå til login</string>
+    <string name="sign_up">Tilmeld dig</string>
+    <string name="sign_in">Log ind</string>
+    <string name="go_to_register">Registrer dig</string>
+    <string name="share">Del</string>
+    <string name="add">Tilføj</string>
+
+    <!--Hints-->
+    <string name="ipaddress_hint">f.eks. 192.168.0.1</string>
+    <string name="portnumber_hint">f.eks. 3000</string>
+    <string name="email_hint">Email adresse</string>
+    <string name="password_hint">Kodeord</string>
+    <string name="add_item_hint">Tilføj vare</string>
+
+</resources>

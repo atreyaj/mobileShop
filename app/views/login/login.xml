@@ -2,17 +2,17 @@
       xmlns="http://schemas.nativescript.org/tns.xsd"
       xmlns:titlecomponent="components/title">
 
-    <titlecomponent:title title="Groceries login"/>
+    <titlecomponent:title title="{{ L('login_title') }}"/>
 
     <StackLayout orientation="vertical">
 
         <Image src="res://logo" stretch="none" horizontalAlignment="center" />
 
-        <TextField id="username" returnKeyType="next" returnPress="goToPassword" text="{{ email }}" hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none"/>
-        <TextField id="password" returnKeyType="go" returnPress="callSignIn" text="{{ password }}" hint="Password" secure="true" />
+        <TextField id="username" returnKeyType="next" returnPress="goToPassword" text="{{ email }}" hint="{{ L('email_hint') }}" keyboardType="email" autocorrect="false" autocapitalizationType="none"/>
+        <TextField id="password" returnKeyType="go" returnPress="callSignIn" text="{{ password }}" hint="{{ L('password_hint') }}" secure="true" />
 
-        <Button text="Sign in" class="green" tap="signIn"/>
-        <Button text="Sign up for Groceries" class="link" tap="register"/>
+        <Button text="{{ L('sign_in') }}" class="green" tap="signIn"/>
+        <Button text="{{ L('go_to_register') }}" class="link" tap="register"/>
 
     </StackLayout>
 </Page>

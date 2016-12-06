@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Application specific-->
+    <string name="app_name">Item list</string>
+    <string name="title_activity_kimera">Item list</string>
+
+    <!--Titles-->
+    <string name="set_server_title">Set api information</string>
+    <string name="register_title">Register user</string>
+    <string name="login_title">User login</string>
+    <string name="items_title">Item list</string>
+
+    <!--Content-->
+    <string name="go_to_login">Go to login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in">Sign in</string>
+    <string name="go_to_register">Register</string>
+    <string name="share">Share</string>
+    <string name="add">Add</string>
+
+    <!--Hints-->
+    <string name="ipaddress_hint">Eg. 192.168.0.1</string>
+    <string name="portnumber_hint">Eg. 3000</string>
+    <string name="email_hint">Email address</string>
+    <string name="password_hint">Password</string>
+    <string name="add_item_hint">Add item</string>
+</resources>
