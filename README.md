@@ -1,10 +1,10 @@
 # The mobile item list
 A NativeScript-built iOS and Android app for managing shop items
 
-**Note**: This app was made for testing offline database with an online api on mobile apps.
+**Note**: This application was made to connect to an api hence, the set server address page.
 
-To test if the offline database works, i have setup a json.db in the **node-json-server** directory. 
-To run it (And the entire project), you need to have [_npm_](https://docs.npmjs.com/getting-started/installing-node) installed first, then install json-server using the command.
+To test that the phone can connect to an api, i have set up a local api, with a json database. 
+To run it (And the entire project), you need to have [_npm_](https://docs.npmjs.com/getting-started/installing-node) installed first, then install **json-server**(npm install -g json-server) using the command.
  
 _npm install -g json-server_
 
@@ -17,4 +17,7 @@ When you got Nativescript up and running, you can type the command
  
  _tns run_ android | ios (Choose either android or ios. Note that, ios only works on Apple devices)
  
- To test the offline database, turn off the api(Does not work yet!), at any given moment and the data you could see with the help of the api, should still be available to you.
+ If you want to know what you ip-address is, open your terminal type **ifconfig**(Linux and Mac) and look for your network interface. Type the ip-address on the server page in the application. 
+ The default port for the api, is 3000, if this is not the case for you, you can see it in the terminal, where you ran the **json-server** command.
+  
+  *Enjoy!*
