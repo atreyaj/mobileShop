@@ -6,7 +6,7 @@
     <titlecomponent:title title="{{ L('set_server_title') }}"/>
 
     <StackLayout orientation="vertical">
-        <dd:DropDown items="{{ protocols }}" selectedIndex="{{ protocol }}" />
+        <dd:DropDown id="dd" items="{{ protocols }}" selectedIndex="{{ protocol }}" />
 
         <TextField id="ipaddress" returnKeyType="next" returnPress="goToPortnumber" text="{{ url }}" hint="{{ L('ipaddress_hint') }}" autocorrect="false" autocapitalizationType="none"/>
         <TextField id="portnumber" returnKeyType="go" returnPress="accept" text="{{ portnumber }}" keyboardType="number" hint="{{ L('portnumber_hint') }}" autocorrect="false" autocapitalizationType="none"/>
