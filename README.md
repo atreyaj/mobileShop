@@ -4,7 +4,7 @@ A NativeScript-built iOS and Android app for managing shop items
 **Note**: This application was made to connect to an api hence, the set server address page.
 
 To test that the phone can connect to an api, i have set up a local api, with a json database. 
-To run it (And the entire project), you need to have [_npm_](https://docs.npmjs.com/getting-started/installing-node) installed first, then install **json-server**(npm install -g json-server) using the command.
+To run it (And the entire project), you need to have [_npm_](https://docs.npmjs.com/getting-started/installing-node) installed first, then install **json-server** using the command.
  
 _npm install -g json-server_
 
