@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Application specific-->
+    <string name="app_name">Artikelliste</string>
+    <string name="title_activity_kimera">Artikelliste</string>
+
+    <!--Titles-->
+    <string name="set_server_title">Geben Sie api-Informationen ein</string>
+    <string name="register_title">Benutzer registrieren</string>
+    <string name="login_title">Benutzer-Anmeldung</string>
+    <string name="items_title">Artikelliste</string>
+
+    <!--Content-->
+    <string name="go_to_login">Zur Anmeldung</string>
+    <string name="sign_up">Anmelden</string>
+    <string name="sign_in">Anmelden</string>
+    <string name="go_to_register">Neu registrieren</string>
+    <string name="share">Aktie</string>
+    <string name="add">Hinzufügen</string>
+
+    <!--Hints-->
+    <string name="ipaddress_hint">Eg. 192.168.0.1</string>
+    <string name="portnumber_hint">Eg. 3000</string>
+    <string name="email_hint">E-Mail-Addresse</string>
+    <string name="password_hint">Passwort</string>
+    <string name="add_item_hint">Artikel hinzufügen</string>
+</resources>

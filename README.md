@@ -17,7 +17,7 @@ When you got Nativescript up and running, you can type the command
  
  _tns run_ android | ios (Choose either android or ios. Note that, ios only works on Apple devices)
  
- If you want to know what you ip-address is, open your terminal type **ifconfig**(Linux and Mac) and look for your network interface. Type the ip-address on the server page in the application. 
+ If you want to know what your ip-address is, open your terminal type **ifconfig**(Linux and Mac) and look for your network interface. Type the ip-address on the server page in the application. 
  The default port for the api, is 3000, if this is not the case for you, you can see it in the terminal, where you ran the **json-server** command.
   
   *Enjoy!*
